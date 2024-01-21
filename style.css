@@ -1,0 +1,1020 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    word-wrap: break-word;    
+    overflow-wrap: break-word;     
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 3;
+}
+header img{
+    width: 16rem;
+    height: 7rem;
+}
+header .container{
+    max-width: 100%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header.rolagem{
+    background-color: #fff;
+    z-index: 3;
+}
+header div .btn-contato{
+    width: 16rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header.rolagem a, header.rolagem img{
+    color: #10104e;
+}
+header ul{
+    list-style-type: none;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 3rem;
+}
+header ul li a{
+    text-decoration: none;
+    color: #10104e;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+header .btn-contato button{
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fff;
+    width: 10rem;
+    height: 3.5rem;
+    border: 0;
+    background-color: #10104e;
+    cursor: pointer;
+    transition: 2s;
+    border-radius: 1.5rem;
+}
+.wraper{
+    width: 100%;    
+    margin: 0 auto;    
+}
+.container{
+    width: 100%;
+    max-width: 80%;   
+    margin: 0 auto;    
+}
+.scrollBox p{ 
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+.scrollBox{
+    padding:1rem 0;
+    background: #e0af45;
+}
+.parallax{
+    display: flex;
+    height: 100vh !important;
+    width: 100%;    
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat ;   
+    background-attachment: fixed;    
+    background-size: cover;
+}
+.efeitoDeSombra{
+    display: flex;
+    height: 100%;    
+    width: 100%;    
+    position: absolute;
+    z-index: 1;
+    background:linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 85%, #000 100%);    /*esta linha causa uma sombra no 'bottom' da imagem*/   
+}
+section.box-1{
+    background-image: url("./imagemParaFundo/img-fundo1.jpg");
+}
+section.box-2{
+    background-image: url("./imagemParaFundo/img-fundo2.jpg");
+}
+section.box-3{
+    background-image: url("./imagemParaFundo/img-fundo3.webp");
+}
+section.box-4{
+    background-image: url("./imagemParaFundo/img-fundo4.jpg");
+}
+.navegation{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    top: 3rem;
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    top: 10rem;
+}
+.presentation-Text{
+    color: #000;
+    font-size: 5.5rem;
+    width: 100%;
+    top: 40rem;
+    margin: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+.buttonContact {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    bottom: 2rem;
+}
+  .whatsapp2 {
+    width: 6rem;
+    animation: vibrate 3s infinite;
+}
+@keyframes vibrate {
+    0%{
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    54% {
+      transform: translateX(0.2rem);
+    }
+    58% {
+        transform: translateX(-0.2rem);
+    }
+    62% {
+        transform: translateX(0.2rem);
+    }
+    66% {
+        transform: translateX(-0.2rem);
+    }
+    70% {
+        transform: translateX(0.2rem);
+    }
+    74% {
+        transform: translateX(-0.2rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.projects-Text{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+}
+.projects-Text h1{
+    font-size: 6.5rem;
+    color :#fff;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+.buttonSet1{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 13rem;
+    font-family: 'Handlee', cursive;
+}
+.buttonSet2{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 35rem;
+    font-family: 'Handlee', cursive;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    width: 17rem;
+    height: 17rem;
+    border: 0.3rem solid black;
+    margin: 0 10rem;
+    border-radius: 3rem;
+    background-color:rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+.box:hover{
+    transition: background-color 0.5s;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+.box a{
+    text-decoration: none;
+    color: #000;
+    width: 17rem;
+    height: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+}
+.boxService{
+    width: 100%;
+    position: relative;
+}
+.serviceSet{
+    display: flex;
+    width: 100%;
+}
+.serviceSequence{
+    width: 28rem;
+    height: 18rem;
+    border: 0.3rem solid #000;
+    border-radius: 0.4rem;
+    margin: 1rem;
+}
+.listBoxService{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 5rem;
+    max-width: 90%;
+}
+.listBoxService ul li{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+    font-weight: 800;
+    font-family: 'Handlee', cursive;
+}
+.fedbackPage{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+}
+.fedbackPage h2{
+    font-size: 6.5rem;
+    color :#fff;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+}
+.fedbackBoxAdjustment{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+}
+.fedbackBox1,.fedbackBox2, .fedbackBox3, .fedbackBox4 {
+    width: 23rem;
+    height: 40rem;
+    border: 0.3rem solid #000;
+    border-radius: 2rem;
+    margin: 0 4rem;
+}   
+.footerLogo{
+    top: 3rem;
+    width: 100%;
+    display: flex;
+    height: 20rem;
+    justify-content: center;
+}
+footer section h4{
+    margin-top: 5rem;
+    font-size: 3.1rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+}
+.adjustButtonContact{
+    width: 100%;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+.footerContactButton{
+    width: 6rem;
+    height: 6rem;
+    background-color: #fff;
+    border-radius: 1.5rem;
+}
+#developer{
+    margin-top: 5rem;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+}
+#developer a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}    
+@media(min-width:1441px) and (max-width:2560px){
+    header img{
+        width: 32rem;
+        height: 14rem;
+    }
+    header div .btn-contato{
+        width: 32rem;
+        height: 14rem;
+    }
+    header ul li{
+        margin: 0 6rem;
+    }
+    header ul li a{
+        font-size: 4rem;
+    }
+    header .btn-contato button{
+        font-size: 4rem;
+        width: 20rem;
+        height: 7rem;
+        border: 0;
+        border-radius: 3rem;
+    }
+    .logo{
+        height: 50rem;
+        top: 15rem;
+    }
+    .presentation-Text{
+        font-size: 10rem;
+        top: 65rem;
+    }
+    .buttonContact {
+        bottom: 3rem;
+    }
+      .whatsapp2 {
+        width: 10rem;
+    }
+      .scrollBox p{
+        font-size: 4rem;
+    }
+    .projects-Text{
+        top: 2rem;
+    }
+    .projects-Text h1{
+        font-size: 12rem;
+    }
+    .buttonSet1{
+        top: 21rem;
+    }
+    .buttonSet2{
+        top: 63rem;
+    }
+    .box{
+        font-size: 8rem;
+        width: 32rem;
+        height: 32rem;
+        border: 0.5rem solid black;
+        margin: 0 20rem;
+        border-radius: 6rem;
+    }
+    .serviceSequence{
+        width: 48rem;
+        height: 28rem;
+        border: 0.5rem solid #000;
+        border-radius: 0.8rem;
+        margin: 3rem;
+    }
+    .listBoxService{
+        margin: auto 10rem;
+    }
+    .listBoxService ul li{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    .fedbackPage{
+        position: absolute;
+        width: 100%;
+        top: 2rem;
+    }
+    .fedbackPage h2{
+        font-size: 12rem;
+    }
+    .fedbackBoxAdjustment{
+        margin-top: 22rem;
+    }
+    .fedbackBox1,.fedbackBox2, .fedbackBox3, .fedbackBox4 {
+        width: 40rem;
+        height: 70rem;
+        border: 0.5rem solid #000;
+        border-radius: 4rem;
+        margin: 0 7rem;
+    }
+    .footerLogo{
+        top: 6rem;
+        height: 40rem;
+    }
+    footer section h4{
+        margin-top: 7rem;
+        font-size: 5.9rem;
+    }
+    .adjustButtonContact{
+        margin-top: 7rem;
+    }
+    .footerContactButton{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 3rem;
+    }
+    #developer{
+        margin-top: 7rem;
+        font-size: 2rem;
+    }
+    #developer a{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width:1440px){
+    .logo{
+        top: 8rem;
+    }
+    .presentation-Text{
+        font-size: 5.5rem;
+        top: 38rem;
+    }
+    .serviceSequence{
+        width: 26rem;
+        height: 16rem;
+    }
+}
+@media(max-width:1024px){
+    header img{
+        width: 14rem;
+        height: 5.5rem;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }  
+    header div .btn-contato{
+        width: 14rem;
+        height: 5.5rem;
+    }
+    header ul li{
+        display: inline-block;
+        margin: 0 2rem;
+    }
+    header ul li a{
+        font-size: 1.5rem;
+    }
+    header .btn-contato button{
+        font-size: 1.8rem;
+        width: 8rem;
+        height: 3rem;
+    }
+    .logo{
+        height: 25rem;
+        top: 8rem;
+    }
+    .presentation-Text{
+        font-size: 4.5rem;
+        top: 33rem;
+    }
+    .buttonContact {
+        bottom: 2rem;
+    }
+    .whatsapp2 {
+        width: 6rem;
+    }
+    .projects-Text{
+        top: 0;
+    }
+    .projects-Text h1{
+        font-size: 6.5rem;
+    }
+    .buttonSet1{
+        top: 10rem;
+    }
+    .buttonSet2{
+        top: 30rem;
+    }
+    .box{
+        width: 15.5rem;
+        height: 15.5rem;
+        margin: 0 7rem;
+    }
+    .serviceSequence{
+        width: 22rem;
+        height: 12rem;
+        margin: 1.5rem;
+    }
+    .listBoxService{
+        margin: auto 3rem;
+    }
+    .listBoxService ul li{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+    .fedbackPage h2{
+        font-size: 6rem;
+    }
+    .fedbackBoxAdjustment{
+        margin-top: 12rem;
+    }
+    .fedbackBox1,.fedbackBox2, .fedbackBox3, .fedbackBox4 {
+        width: 18rem;
+        height: 32rem;
+        margin: 0 2rem;
+    }   
+    .footerLogo{
+        height: 20rem;
+    }
+    footer section h4{
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    .adjustButtonContact{
+        margin-top: 2rem;
+    }
+    #developer{
+        margin-top: 4rem;
+    }
+}
+@media(max-width:768px){
+    header img{
+        width: 12rem;
+        height: 5rem;
+    }
+    header ul li a{
+        font-size: 1.5rem;
+    }
+    header div .btn-contato{
+        width: 10rem;
+        height: 6rem;
+    }
+    header .btn-contato button{
+        font-size: 2rem;
+    }
+    .logo{
+    height: 20rem;
+    top: 8rem;
+    }
+    .presentation-Text{
+        font-size: 4.4rem;
+        top: 30rem;
+    }
+    .buttonContact {
+        bottom: 2rem;
+    }
+      .projects-Text{
+        top: 2rem;
+    }
+    .projects-Text h1{
+        font-size: 5rem;
+    }
+    .buttonSet1{
+        top: 12rem;
+    }
+    .buttonSet2{
+        top: 30rem;
+    }
+    .box{
+        font-size: 4rem;
+        width: 14rem;
+        height: 14rem;
+        margin: 0 3rem;
+    }
+    .serviceSequence{
+        width: 22rem;
+        height: 12rem;
+        margin: 1.5rem;
+    }
+    .listBoxService{
+        margin: auto 4rem;
+    }
+    .listBoxService ul li{
+        font-size: 2rem;
+        margin-bottom: 0;
+    }    
+    .fedbackPage h2{
+        font-size: 6rem;
+    }
+    .fedbackBoxAdjustment{
+        margin-top: 12rem;
+    }
+    .fedbackBox1,.fedbackBox2, .fedbackBox3 {
+        width: 18rem;
+        height: 32rem;
+        margin: 0 2rem;
+    }   
+    .fedbackBox4{
+        display: none;
+    }
+    .footerLogo{
+        height: 20rem;
+    }
+    footer section h4{
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    .adjustButtonContact{
+        margin-top: 2rem;
+    }
+    #developer{
+        margin-top: 4rem;
+    }
+}
+@media(max-width:425px){
+    header img{
+        display: none;
+    }
+    .flex{
+        justify-content: center;
+        margin-left: 0;
+    }
+    header{
+        height: 6rem;
+    }
+    header div .btn-contato{
+        display: none
+    }
+    header ul{
+        margin-top: 1rem;
+    }
+    header ul li{
+        display: inline-block;
+        margin: 1rem;
+    }
+    header ul li a{
+        font-size: 1.7rem;
+    }
+    header .btn-contato button{
+        display: none;
+    }
+    .logo{
+        height: 18rem;
+        top: 8rem;
+    }
+    .presentation-Text{
+        font-size: 3.9rem;
+        width: 100%;
+        top: 26rem;
+    }
+    .presentation-Text p{
+        margin: 0 2rem;
+    }
+    .buttonContact {
+        bottom: 2rem;
+    }
+      .whatsapp2 {
+        width: 4.5rem;
+    }
+    .container{
+        max-width: 90%; 
+    }
+    .scrollBox p{ 
+        font-size: 1.8rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .projects-Text h1{
+        font-size: 2.5rem;
+    }        
+    .buttonSet1{
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        top: 7rem;
+    }
+    .buttonSet2{
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        top: 7rem;
+        margin-left: 50%;
+    }
+    .box{
+        justify-content: center;
+        font-size: 4rem;
+        width: 15rem;
+        height: 11rem;
+        border: 0.2rem solid black;
+        margin: 1rem auto;
+    }
+    .serviceSequence{
+        display: none;
+    }
+    .listBoxService{
+        margin: 1.5rem 3rem;
+    }
+    .listBoxService ul li{
+        font-size: 1.6rem;
+        margin-bottom: 0.7rem;
+    }
+    .fedbackPage{
+        position: absolute;
+        width: 100%;
+        top: 2rem;
+    }
+    .fedbackPage h2{
+        font-size: 3rem;
+    }
+    .fedbackBoxAdjustment{
+        margin-top: 12rem;
+    }
+    .fedbackBox3, .fedbackBox4{
+        display: none;
+    }
+    .fedbackBox1, .fedbackBox2 {
+        width: 15rem;
+        height: 28rem;
+        margin: 0 2rem;
+    }   
+    .footerLogo{
+        height: 17rem;
+    }
+    footer section h4{
+        margin-top: 2.5rem;
+        font-size: 3rem;
+    }
+    .adjustButtonContact{
+        margin-top: 5rem;
+    }
+    .footerContactButton{
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 1rem;
+    }
+    #developer{
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+    #developer a{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:375px){
+    header img{
+        display: none;
+    }
+    .flex{
+        justify-content: center;
+        margin-left: 0;
+    }
+    header{
+        height: 6rem;
+    }
+    header div .btn-contato{
+        display: none;
+    }
+    header ul{
+        margin-top: 1rem;
+    }
+    header ul li{
+        display: inline-block;
+        margin: 1rem;
+    }
+    header ul li a{
+        font-size: 1.7rem;
+    }
+    header .btn-contato button{
+        display: none;
+    }
+    .logo{
+        height: 16rem;
+        top: 8rem;
+    }
+    .presentation-Text{
+        font-size: 3.5rem;
+        width: 100%;
+        top: 25rem;
+    }
+    .presentation-Text p{
+        margin: 0 2rem;
+    }
+    .buttonContact {
+        bottom: 3rem;
+    }
+      .whatsapp2 {
+        width: 4.5rem;
+    }
+    .container{
+        max-width: 90%; 
+    }
+    .scrollBox p{ 
+        font-size: 1.6rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .projects-Text h1{
+        font-size: 2.3rem;
+    }        
+    .buttonSet1{
+        flex-direction: column;
+        align-items: center;
+        top: 5rem;        
+    }
+    .buttonSet2{
+        flex-direction: column;
+        align-items: center;
+        top: 5rem;
+    }
+    .box{
+        justify-content: center;
+        font-size: 3rem;
+        width: 12rem;
+        height: 11rem;
+        border: 0.2rem solid black;
+        margin: 1.3rem auto;
+    }
+    .serviceSequence{
+        display: none;
+    }
+    .listBoxService{
+        margin: 1.5rem 3rem;
+    }
+    .listBoxService ul li{
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .fedbackPage{
+        position: absolute;
+        width: 100%;
+        top: 2rem;
+    }
+    .fedbackPage h2{
+        font-size: 2.2rem;
+    }
+    .fedbackBoxAdjustment{
+        margin-top: 10rem;
+    }
+    .fedbackBox2, .fedbackBox3, .fedbackBox4{
+        display: none;
+    }
+    .fedbackBox1 {
+        width: 18rem;
+        height: 32rem;
+    }   
+    .footerLogo{
+        height: 16rem;
+    }
+    footer section h4{
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    .adjustButtonContact{
+        margin-top: 5rem;
+    }
+    .footerContactButton{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+    #developer{
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+    #developer a{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:320px){
+    header img{
+        display: none;
+    }
+    .flex{
+        justify-content: center;
+        margin-left: 0;
+    }
+    header{
+        height: 5.5rem;
+    }
+    header div .btn-contato{
+        display: none;
+    }
+    header ul{
+        margin-top: 1rem;
+    }
+    header ul li{
+        display: inline-block;
+        margin: 1rem;
+    }
+    header ul li a{
+        font-size: 1.5rem;
+    }
+    header .btn-contato button{
+        display: none;
+    }
+    .logo{
+        height: 13rem;
+        top: 10rem;
+    }
+    .presentation-Text{
+        font-size: 3.2rem;
+        width: 100%;
+        top: 25rem;
+    }
+    .presentation-Text p{
+        margin: 0 2rem;
+    }
+    .buttonContact {
+        bottom: 2rem;
+    }
+      .whatsapp2 {
+        width: 4rem;
+    }
+    .container{
+        max-width: 90%; 
+    }
+    .scrollBox p{ 
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .projects-Text h1{
+        font-size: 2rem;
+    }        
+    .buttonSet1{
+        flex-direction: column;
+        align-items: center;
+        top: 7rem;
+    }
+    .buttonSet2{
+        flex-direction: column;
+        align-items: center;
+        top: 7rem;
+        margin-left: 50%;
+    }
+    .box{
+        justify-content: center;
+        font-size: 3rem;
+        width: 11rem;
+        height: 11rem;
+        border: 0.2rem solid black;
+        margin: 1.5rem auto;
+    }
+    .serviceSequence{
+        display: none;
+    }
+    .listBoxService{
+        margin: 1.5rem 3rem;
+    }
+    .listBoxService ul li{
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .fedbackPage{
+        position: absolute;
+        width: 100%;
+        top: 2rem;
+    }
+    .fedbackPage h2{
+        font-size: 2.2rem;
+    }
+    .fedbackBoxAdjustment{
+        margin-top: 10rem;
+    }
+    .fedbackBox2, .fedbackBox3, .fedbackBox4{
+        display: none;
+    }
+    .fedbackBox1 {
+        width: 18rem;
+        height: 32rem;
+    }   
+    .footerLogo{
+        height: 13rem;
+    }
+    footer section h4{
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    .adjustButtonContact{
+        margin-top: 5rem;
+    }
+    .footerContactButton{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+    #developer{
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+    #developer a{
+        font-size: 1.2rem;
+    }
+}
